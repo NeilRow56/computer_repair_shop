@@ -5,12 +5,15 @@ import { Button } from '@/components/ui/button'
 import { NavButton } from './nav-button'
 import { NavButtonMenu } from './nav-button-menu'
 import { ModeToggle } from './mode-toggle'
+import { SidebarTrigger } from './ui/sidebar'
 
 export function Header() {
   return (
     <header className='animate-slide bg-background sticky top-0 z-20 h-12 border-b p-2'>
-      <div className='flex h-8 w-full items-center justify-between'>
+      <div className='flex h-10 w-full items-center justify-between'>
         <div className='flex items-center gap-2'>
+          <SidebarTrigger className='-ml-1' />
+
           <NavButton href='/tickets' label='Home' icon={HomeIcon} />
 
           <Link
@@ -18,7 +21,7 @@ export function Header() {
             className='ml-0 flex items-center justify-center gap-2'
             title='Home'
           >
-            <h1 className='m-0 mt-1 hidden text-xl font-bold sm:block'>
+            <h1 className='m-0 hidden text-xl font-bold sm:block'>
               Computer Repair Shop
             </h1>
           </Link>
