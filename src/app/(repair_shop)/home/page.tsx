@@ -1,12 +1,8 @@
-function getRandomInt(count: number) {
-  return Math.floor(Math.random() * count)
+export const metadata = {
+  title: 'Home'
 }
 
 const Home = () => {
-  const random = getRandomInt(2)
-  if (random === 1) {
-    throw new Error('Error loading review')
-  }
   return <div>Home page</div>
 }
 
